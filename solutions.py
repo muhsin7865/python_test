@@ -27,3 +27,10 @@ def biggestn(n, m):
                n[j] = temp
 
     return n[len(n)-m: len(n)]
+
+def ffindstring(fname, s):
+    with open(fname, "r") as F:
+        for line in F.readlines():
+            if s in line:
+                return True
+            return False
